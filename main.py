@@ -4,8 +4,8 @@ os.environ['KMP_DUPLICATE_LIB_OK'] = 'TRUE'
 import torch
 import time
 import argparse
-from gaiVgg_model import Dehaze, Discriminator
-from MyDataset1 import MyDataset
+from model import Dehaze, Discriminator
+from MyDataset import MyDataset
 from torch.utils.data import DataLoader
 import torch.nn.functional as F
 from pytorch_msssim import msssim, ssim
